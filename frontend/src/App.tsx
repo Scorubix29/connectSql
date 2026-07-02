@@ -15,7 +15,7 @@ function App() {
   
 
   const fetchStudents = () => {
-    fetch("http://localhost:3000/student")
+    fetch("http://localhost:3000/")
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => console.log(err));
