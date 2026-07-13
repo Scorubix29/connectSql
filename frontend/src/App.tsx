@@ -12,7 +12,6 @@ function App() {
   const [formData, setFormData] = useState<Student>({ name: '', phone: '', email: '' });
   const [editId, setEditId] = useState<number | null>(null);
 
-  
 
   const fetchStudents = () => {
     fetch("http://localhost:3000/student")
